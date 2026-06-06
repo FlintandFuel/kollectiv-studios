@@ -27,6 +27,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import SalesBar from '@/components/SalesBar'
+import KollectivAcoustics from '@/components/KollectivAcoustics'
 import './index.css'
 
 const BASE = import.meta.env.BASE_URL
@@ -87,6 +88,12 @@ function Nav() {
             className="text-xs tracking-[0.2em] uppercase text-white/60 hover:text-white transition-colors duration-200 hidden sm:block"
           >
             Services
+          </a>
+          <a
+            href="#acoustics"
+            className="text-xs tracking-[0.2em] uppercase text-white/60 hover:text-white transition-colors duration-200 hidden sm:block"
+          >
+            Acoustics
           </a>
           <a
             href="#about"
@@ -972,6 +979,7 @@ function Footer() {
               {[
                 { label: 'The Space', href: '#the-space' },
                 { label: 'Services', href: '#services' },
+                { label: 'Acoustics', href: '#acoustics' },
                 { label: 'About', href: '#about' },
                 { label: 'Contact', href: '#contact' },
               ].map((link) => (
@@ -1083,6 +1091,7 @@ export default function App() {
         <TrustBar />
         <TheSpace />
         <Services />
+        <KollectivAcoustics />
         <TheVibe />
         <EmailCapture />
         <Contact />
