@@ -105,9 +105,12 @@ function Nav() {
             href="https://wa.me/27846193650"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs tracking-[0.2em] uppercase text-black bg-white px-5 py-2.5 hover:bg-white/90 transition-colors duration-200 min-h-[44px] flex items-center"
+            className="text-xs tracking-[0.2em] uppercase text-black bg-white px-5 py-2.5 hover:bg-white/90 transition-colors duration-200 min-h-[44px] flex items-center group"
           >
-            Book a Session
+            <span className="relative overflow-hidden inline-block">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Book a Session</span>
+              <span className="block absolute inset-0 transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Book a Session</span>
+            </span>
           </a>
         </nav>
       </div>
@@ -157,9 +160,12 @@ function Hero() {
             href="https://wa.me/27846193650"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px]"
+            className="inline-flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] group"
           >
-            Let's Make Something
+            <span className="relative overflow-hidden inline-block">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Let's Make Something</span>
+              <span className="block absolute inset-0 transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Let's Make Something</span>
+            </span>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
               <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -253,13 +259,13 @@ function TheSpace() {
           <motion.div
             {...fadeUp}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="col-span-12 md:col-span-7 overflow-hidden bg-[#111]"
+            className="col-span-12 md:col-span-7 overflow-hidden bg-[#111] group"
             style={{ aspectRatio: '4/3' }}
           >
             <img
               src={`${BASE}images/IMG_3952.JPEG`}
               alt="Control room at Kollectiv Studios showing engineer workstation with dual monitors and KRK studio monitors"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               style={{ filter: 'grayscale(100%)' }}
             />
           </motion.div>
@@ -267,13 +273,13 @@ function TheSpace() {
           <motion.div
             {...fadeUp}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="col-span-12 md:col-span-5 overflow-hidden bg-[#111]"
+            className="col-span-12 md:col-span-5 overflow-hidden bg-[#111] group"
             style={{ aspectRatio: '3/4' }}
           >
             <img
               src={`${BASE}images/IMG_4095.JPEG`}
               alt="Vocalist recording in the Kollectiv Studios live room with acoustic diffusion panels"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               style={{ filter: 'grayscale(100%)' }}
             />
           </motion.div>
@@ -281,13 +287,13 @@ function TheSpace() {
           <motion.div
             {...fadeUp}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="col-span-12 md:col-span-5 overflow-hidden bg-[#111]"
+            className="col-span-12 md:col-span-5 overflow-hidden bg-[#111] group"
             style={{ aspectRatio: '3/4' }}
           >
             <img
               src={`${BASE}images/IMG_4065.JPEG`}
               alt="Live room at Kollectiv Studios showing full drum kit setup and acoustic treatment panels for band recording"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
               style={{ filter: 'grayscale(100%)' }}
             />
           </motion.div>
@@ -295,13 +301,13 @@ function TheSpace() {
           <motion.div
             {...fadeUp}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="col-span-12 md:col-span-7 overflow-hidden bg-[#111]"
+            className="col-span-12 md:col-span-7 overflow-hidden bg-[#111] group"
             style={{ aspectRatio: '4/3' }}
           >
             <img
               src={`${BASE}images/IMG_4001.JPEG`}
               alt="Full band session at Kollectiv Studios Pretoria — drum kit in foreground, musician at keyboard in the live room"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               style={{ filter: 'grayscale(100%)' }}
             />
           </motion.div>
@@ -400,9 +406,12 @@ function Services() {
             href="https://wa.me/27846193650"
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 text-xs tracking-[0.25em] uppercase text-black bg-white px-7 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[48px] flex items-center"
+            className="shrink-0 text-xs tracking-[0.25em] uppercase text-black bg-white px-7 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[48px] flex items-center group"
           >
-            Ask a Question
+            <span className="relative overflow-hidden inline-block">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Ask a Question</span>
+              <span className="block absolute inset-0 transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Ask a Question</span>
+            </span>
           </a>
         </motion.div>
       </div>
@@ -547,9 +556,10 @@ function EmailCapture() {
               />
               <button
                 type="submit"
-                className="w-full text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px]"
+                className="w-full text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] group overflow-hidden relative flex items-center justify-center"
               >
-                Send Me the Checklist
+                <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Send Me the Checklist</span>
+                <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Send Me the Checklist</span>
               </button>
               <p className="text-white/18 text-xs leading-relaxed">
                 No spam. Useful content and occasional session stories. Unsubscribe any time.
@@ -604,12 +614,15 @@ function Contact() {
               href="https://wa.me/27846193650"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-black bg-white px-7 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] mb-12"
+              className="inline-flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-black bg-white px-7 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] mb-12 group"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
-              WhatsApp 084 619 3650
+              <span className="relative overflow-hidden inline-block">
+                <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">WhatsApp 084 619 3650</span>
+                <span className="block absolute inset-0 transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">WhatsApp 084 619 3650</span>
+              </span>
             </a>
 
             <div className="border-t border-white/10 pt-8 space-y-3 text-sm text-white/35">
@@ -717,9 +730,10 @@ function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px]"
+                  className="w-full text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] group overflow-hidden relative flex items-center justify-center"
                 >
-                  Send Enquiry
+                  <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Send Enquiry</span>
+                  <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Send Enquiry</span>
                 </button>
                 <p className="text-white/18 text-xs">
                   Or message directly on WhatsApp. It's faster.
@@ -768,9 +782,12 @@ function InstagramStrip() {
             href="https://www.instagram.com/kollectiv_studio.pta"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] tracking-[0.2em] uppercase text-white/35 hover:text-white transition-colors border border-white/15 hover:border-white/35 px-5 py-3 min-h-[44px] flex items-center"
+            className="text-[11px] tracking-[0.2em] uppercase text-white/35 hover:text-white transition-colors border border-white/15 hover:border-white/35 px-5 py-3 min-h-[44px] flex items-center group"
           >
-            Follow on Instagram
+            <span className="relative overflow-hidden inline-block">
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Follow on Instagram</span>
+              <span className="block absolute inset-0 transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Follow on Instagram</span>
+            </span>
           </a>
         </motion.div>
 
@@ -1026,9 +1043,12 @@ function Footer() {
               href="https://wa.me/27846193650"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-xs tracking-[0.25em] uppercase text-black bg-white px-6 py-3 hover:bg-white/90 transition-colors duration-200 min-h-[44px]"
+              className="inline-flex items-center text-xs tracking-[0.25em] uppercase text-black bg-white px-6 py-3 hover:bg-white/90 transition-colors duration-200 min-h-[44px] group"
             >
-              Book a Session
+              <span className="relative overflow-hidden inline-block">
+                <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Book a Session</span>
+                <span className="block absolute inset-0 transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Book a Session</span>
+              </span>
             </a>
           </div>
         </div>
@@ -1091,8 +1111,8 @@ export default function App() {
         <TrustBar />
         <TheSpace />
         <Services />
-        <KollectivAcoustics />
         <TheVibe />
+        <KollectivAcoustics />
         <EmailCapture />
         <Contact />
         <InstagramStrip />
