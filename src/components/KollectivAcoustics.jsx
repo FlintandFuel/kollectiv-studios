@@ -183,8 +183,8 @@ export default function KollectivAcoustics() {
               style={{ aspectRatio: '4/3' }}
             >
               <img
-                src={`${BASE}images/IMG_4095.JPEG`}
-                alt="Vocalist recording in the Kollectiv Studios live room with acoustic diffusion panels"
+                src={`${BASE}images/IMG_4006.JPEG`}
+                alt="Studio interior detail at Kollectiv Studios, The Moot, Pretoria"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 style={{ filter: 'grayscale(100%)' }}
               />

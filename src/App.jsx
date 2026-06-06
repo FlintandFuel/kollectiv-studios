@@ -556,9 +556,9 @@ function EmailCapture() {
               />
               <button
                 type="submit"
-                className="w-full text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] group overflow-hidden relative flex items-center justify-center"
+                className="w-full text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] group overflow-hidden relative"
               >
-                <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Send Me the Checklist</span>
+                <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out group-hover:-translate-y-full">Send Me the Checklist</span>
                 <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Send Me the Checklist</span>
               </button>
               <p className="text-white/18 text-xs leading-relaxed">
@@ -730,9 +730,9 @@ function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] group overflow-hidden relative flex items-center justify-center"
+                  className="w-full text-xs tracking-[0.25em] uppercase text-black bg-white px-8 py-4 hover:bg-white/90 transition-colors duration-200 min-h-[52px] group overflow-hidden relative"
                 >
-                  <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">Send Enquiry</span>
+                  <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out group-hover:-translate-y-full">Send Enquiry</span>
                   <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">Send Enquiry</span>
                 </button>
                 <p className="text-white/18 text-xs">
