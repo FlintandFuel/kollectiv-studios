@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    container_name: kollectiv-studios-dev
+    
+    volumes:
+      - ../:/workspace:cached
+      - node_modules:/workspace/node_modules
+      - ${HOME}/.ssh:/home/node/.ssh:cached
+      - ${HOME}/.gitconfig:/home/node/.gitconfig:cached
+    
+    ports:
+      - "5173:5173"  # Vite dev server
+      - "5174:5174"  # Vite HMR
+    
+    environment:
+      - NODE_ENV=development
+    
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    
+    stdin_open: true
+    tty: true
+
+volumes:
+  node_modules:
