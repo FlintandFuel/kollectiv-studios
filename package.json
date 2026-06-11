@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:cloudrun": "npm run build && gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/kollectiv-studios . && gcloud run deploy kollectiv-studios --image gcr.io/$GOOGLE_CLOUD_PROJECT/kollectiv-studios --platform managed --region us-central1 --allow-unauthenticated --port 80",
+    "deploy:gcs": "npm run build && gsutil -m rsync -r dist gs://$GCS_BUCKET"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
